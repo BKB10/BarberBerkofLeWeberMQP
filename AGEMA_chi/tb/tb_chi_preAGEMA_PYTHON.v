@@ -1,3 +1,9 @@
+/*
+Description: Simply took the input from SimpleChi.py and tested it with chi.v
+Result: FAILED
+Cause: chi.v and SimpleChi.py processes the input differently in terms of Endian-ess
+*/
+
 `timescale 1ns/1ps
 
 module tb_chi_preAGEMA_directed;

@@ -1,3 +1,8 @@
+/*
+DUT: chi.v
+Des: Random-constrained tb with Ref model
+*/
+
 `timescale 1ns/1ps
 
 module tb_chi_preAGEMA;
