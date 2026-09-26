@@ -1,4 +1,4 @@
-RTL_DIR := ../RTL
+RTL_DIR := ../rtl
 TB_DIR  := .
 
 SOURCES := $(TB_DIR)/tb_chi_postAGEMA.v \
