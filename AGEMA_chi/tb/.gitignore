@@ -1,5 +1,6 @@
 # Iverilog sim artifact
 sim
+sim.out
 *.vcd
 *.fst   
 #######################
