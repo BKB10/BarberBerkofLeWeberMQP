@@ -2,5 +2,6 @@
 sim
 sim.out
 *.vcd
-*.fst   
+*.fst 
+sim.vvp  
 #######################
