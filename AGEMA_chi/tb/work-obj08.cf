@@ -1,0 +1,19 @@
+v 4
+file . "../../GHPC_Gadget//GHPC_Gadget.vhd" "6eb74583b3816c71ce9f8de0c6405fdacbda5d0a" "20260928203324.987":
+  entity ghpc_gadget at 4( 56) + 0 on 21;
+  architecture behavioral of ghpc_gadget at 26( 694) + 0 on 22;
+file . "../../GHPC_Gadget//GHPC_Step1.vhd" "db79d88398ff8c149e7dec45765aeff5bd9af0a5" "20260928203324.723":
+  entity ghpc_step1 at 4( 53) + 0 on 17;
+  architecture behavioral of ghpc_step1 at 25( 576) + 0 on 18;
+file . "../../GHPC_Gadget//reg.vhd" "3b4ce8c4219fa8f4d4305ade22fd6e2ec41369d1" "20260928203324.597":
+  entity reg at 28( 1384) + 0 on 13;
+  architecture behavioral of reg at 37( 1549) + 0 on 14;
+file . "../../GHPC_Gadget//GHPC_pkg.vhd" "ed9b5e80a408e58fa7b9e177dccda9b6787809c7" "20260928203324.527":
+  package ghpc_pkg at 25( 1248) + 0 on 11 body;
+  package body ghpc_pkg at 49( 1634) + 0 on 12;
+file . "../../GHPC_Gadget//GHPC_AND_reg.vhd" "b1247dd43e0486fdd6af62d91e5837fc515a9e45" "20260928203324.658":
+  entity ghpc_and_reg at 26( 1288) + 0 on 15;
+  architecture behavioral of ghpc_and_reg at 40( 1525) + 0 on 16;
+file . "../../GHPC_Gadget//GHPC_Step2.vhd" "c150a7000686767254e999dbc8e1cbafcb9ab480" "20260928203324.867":
+  entity ghpc_step2 at 26( 1288) + 0 on 19;
+  architecture behavioral of ghpc_step2 at 46( 1779) + 0 on 20;
