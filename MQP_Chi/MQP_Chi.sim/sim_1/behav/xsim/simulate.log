@@ -1,0 +1,6 @@
+Time resolution is 1 ps
+
+----- ALL 200 TESTS PASSED SUCCESSFULLY! YAY! -----
+
+$finish called at time : 2016 ns : File "/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/tb/tb_chi_postAGEMA.v" Line 134
+INFO: xsimkernel Simulation Memory Usage: 608860 KB (Peak: 638272 KB), Simulation CPU Usage: 12540 ms
