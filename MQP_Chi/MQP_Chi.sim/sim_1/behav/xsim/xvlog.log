@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/rtl/chi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chi
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/rtl/chi_xilinx_netlist_GHPCLL__d1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chi_GHPCLL__d1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/tb/tb_chi_postAGEMA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_chi_postAGEMA

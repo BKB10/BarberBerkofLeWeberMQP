@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../GHPC_Gadget/GHPC_AND_reg.vhd" \
+"../../../../../GHPC_Gadget/GHPC_pkg.vhd" \
+"../../../../../GHPC_Gadget/reg.vhd" \
+"../../../../../AGEMA_chi_GHPC_Gadgets/rtl/GHPC_Step1_LUT3.vhd" \
+"../../../../../GHPC_Gadget/GHPC_Step2.vhd" \
+"../../../../../AGEMA_chi_GHPC_Gadgets/rtl/GHPC_Gadget_LUT3.vhd" \
+"../../../../../AGEMA_chi_GHPC_Gadgets/rtl/LUT3_GHPC.vhd" \
+
+# Do not sort compile order
+nosort
