@@ -124,11 +124,11 @@ module tb_chi_postAGEMA;
     
         //--- Results Tally-up ---//
         if (errors == 0) begin
-            $display("\n----- ALL %0d TESTS PASSED SUCCESSFULLY! YAY! -----\n", NUM_TEST);
+            $display("\n----- ALL %0d TESTS PASSED! YAY! -----\n", NUM_TEST);
         end else begin
-            $display("----- TEST FAILED: %0d MISMATCH(ES) -----", fail_count);
+            $display("\n ----- TEST FAILED: %0d MISMATCH(ES) ----- \n", fail_count);
             for (j = 0; j < fail_count; j = j + 1)
-                $display("\n--- Failed vector index: %0d ---", fail_vec[j]);
+                $display("\n--- Failed vector index: %0d --- \n", fail_vec[j]);
         end
         $finish;
     end    

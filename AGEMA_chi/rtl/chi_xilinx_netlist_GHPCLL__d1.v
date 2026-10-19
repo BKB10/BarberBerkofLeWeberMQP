@@ -3,12 +3,12 @@
 /* the circuit has 1 register stage(s) in total */
 
 module chi_GHPCLL__d1 (state_in1_s0, clk, state_in1_s1, Fresh, state_out1_s0, state_out1_s1);
-    input [1599:0] state_in1_s0 ;
-    input clk ;
-    input [1599:0] state_in1_s1 ;
-    input [12799:0] Fresh ;
-    output [1599:0] state_out1_s0 ;
-    output [1599:0] state_out1_s1 ;
+    input [1599:0] state_in1_s0;
+    input clk;
+    input [1599:0] state_in1_s1;
+    input [12799:0] Fresh;
+    output [1599:0] state_out1_s0;
+    output [1599:0] state_out1_s1;
 
     /* cells in depth 0 */
 
