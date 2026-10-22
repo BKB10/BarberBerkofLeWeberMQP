@@ -11,7 +11,7 @@
 
 // Macro
 
-module tb_chi_postAGEMA;
+module tb_chi_structural_postAGEMA;
   reg [1599:0] state_in1;
   reg [1599:0] s0, s1;
   reg [12799:0] Fresh;

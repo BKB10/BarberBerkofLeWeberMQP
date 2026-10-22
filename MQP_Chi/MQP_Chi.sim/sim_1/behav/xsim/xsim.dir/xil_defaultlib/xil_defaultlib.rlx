@@ -3,11 +3,10 @@
 Nov 14 2025
 12:36:23
 /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/rtl/chi.v,1791224793,verilog,,/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/rtl/chi_xilinx_netlist_GHPCLL__d1.v,,chi,,,../../../../../../../../usr/local/Xilinx/2025.2/data/rsb/busdef,,,,,
-/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/rtl/chi_xilinx_netlist_GHPCLL__d1.v,1791224793,verilog,,/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/tb/tb_chi_postAGEMA.v,,chi_GHPCLL__d1,,,../../../../../../../../usr/local/Xilinx/2025.2/data/rsb/busdef,,,,,
+/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/rtl/chi_xilinx_netlist_GHPCLL__d1.v,1792435463,verilog,,/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/tb/tb_chi_structural_postAGEMA.v,,chi_GHPCLL__d1,,,../../../../../../../../usr/local/Xilinx/2025.2/data/rsb/busdef,,,,,
 /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/rtl/GHPC_Gadget_LUT3.vhd,1792413704,vhdl,/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/rtl/LUT3_GHPC.vhd,,,ghpc_gadget_lut3,,,,,,,,
 /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/rtl/GHPC_Step1_LUT3.vhd,1792413704,vhdl,/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/rtl/GHPC_Gadget_LUT3.vhd,,,ghpc_step1_lut3,,,,,,,,
 /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/rtl/LUT3_GHPC.vhd,1792413704,vhdl,,,,lut3_ghpc,,,,,,,,
-/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/tb/tb_chi_postAGEMA.v,1792419019,verilog,,,,tb_chi_postAGEMA,,,../../../../../../../../usr/local/Xilinx/2025.2/data/rsb/busdef,,,,,
 /home/hvle/BarberBerkofLeWeberMQP/GHPC_Gadget/GHPC_AND_reg.vhd,1792413704,vhdl,/home/hvle/BarberBerkofLeWeberMQP/GHPC_Gadget/GHPC_Step2.vhd,,,ghpc_and_reg,,,,,,,,
 /home/hvle/BarberBerkofLeWeberMQP/GHPC_Gadget/GHPC_Step2.vhd,1792413704,vhdl,/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/rtl/GHPC_Gadget_LUT3.vhd,,,ghpc_step2,,,,,,,,
 /home/hvle/BarberBerkofLeWeberMQP/GHPC_Gadget/GHPC_pkg.vhd,1792413704,vhdl,/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/rtl/GHPC_Gadget_LUT3.vhd;/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/rtl/GHPC_Step1_LUT3.vhd;/home/hvle/BarberBerkofLeWeberMQP/GHPC_Gadget/GHPC_Step2.vhd,,,ghpc_pkg,,,,,,,,

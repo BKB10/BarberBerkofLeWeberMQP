@@ -56,7 +56,6 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 1
 set_param general.usePosixSpawnForFork 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7k70tfbv676-1
@@ -91,6 +90,9 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc /home/hvle/BarberBerkofLeWeberMQP/MQP_Chi/MQP_Chi.srcs/constrs_1/new/chi_GHPCLL_xdc.xdc
+set_property used_in_implementation false [get_files /home/hvle/BarberBerkofLeWeberMQP/MQP_Chi/MQP_Chi.srcs/constrs_1/new/chi_GHPCLL_xdc.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
 
 read_checkpoint -auto_incremental -incremental /home/hvle/BarberBerkofLeWeberMQP/MQP_Chi/MQP_Chi.srcs/utils_1/imports/synth_1/chi_GHPCLL__d1.dcp

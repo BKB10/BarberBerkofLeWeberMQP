@@ -1,7 +1,7 @@
 Vivado Simulator v2025.2
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: /usr/local/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chi_postAGEMA_behav xil_defaultlib.tb_chi_postAGEMA xil_defaultlib.glbl -log elaborate.log 
+Running: /usr/local/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chi_structural_postAGEMA_behav xil_defaultlib.tb_chi_structural_postAGEMA xil_defaultlib.glbl -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -21,6 +21,6 @@ Compiling architecture behavioral of entity xil_defaultlib.GHPC_Step2 [\GHPC_Ste
 Compiling architecture behavioral of entity xil_defaultlib.GHPC_Gadget_LUT3 [\GHPC_Gadget_LUT3(in_size=3,pipe...]
 Compiling architecture structural of entity xil_defaultlib.LUT3_GHPC [\LUT3_GHPC(init=180)\]
 Compiling module xil_defaultlib.chi_GHPCLL__d1
-Compiling module xil_defaultlib.tb_chi_postAGEMA
+Compiling module xil_defaultlib.tb_chi_structural_postAGEMA
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_chi_postAGEMA_behav
+Built simulation snapshot tb_chi_structural_postAGEMA_behav

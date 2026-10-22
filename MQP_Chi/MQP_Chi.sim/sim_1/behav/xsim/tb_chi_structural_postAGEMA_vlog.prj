@@ -2,7 +2,7 @@
 verilog xil_defaultlib  --include "../../../../../../../../usr/local/Xilinx/2025.2/data/rsb/busdef" \
 "../../../../../AGEMA_chi/rtl/chi.v" \
 "../../../../../AGEMA_chi/rtl/chi_xilinx_netlist_GHPCLL__d1.v" \
-"../../../../../AGEMA_chi_GHPC_Gadgets/tb/tb_chi_postAGEMA.v" \
+"../../../../../AGEMA_chi_GHPC_Gadgets/tb/tb_chi_structural_postAGEMA.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"
