@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Oct 19 15:38:19 2026
+# Process ID         : 4089510
+# Current directory  : /home/hvle
+# Command line       : vivado
+# Log file           : /home/hvle/vivado.log
+# Journal file       : /home/hvle/vivado.jou
+# Running On         : synopsys-vernam
+# Platform           : rhel
+# Operating System   : Red Hat Enterprise Linux 8.10 (Ootpa)
+# Processor Detail   : Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz
+# CPU Frequency      : 2399.996 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 4
+# Host memory        : 33431 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 33431 MB
+# Available Virtual  : 28948 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/hvle/BarberBerkofLeWeberMQP/MQP_Chi/MQP_Chi.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/tb/tb_chi_postAGEMA.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/tb/tb_chi_postAGEMA.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/tb/tb_chi_structural_postAGEMA.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+add_files -norecurse /home/hvle/BarberBerkofLeWeberMQP/LIB/custom_cells.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /home/hvle/BarberBerkofLeWeberMQP/LIB/custom_cells.v] -no_script -reset -force -quiet
+remove_files  /home/hvle/BarberBerkofLeWeberMQP/LIB/custom_cells.v
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source tb_chi_structural_postAGEMA.tcl

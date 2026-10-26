@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1792442531" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/chi_GHPCLL__d1.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1792956668" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/chi_GHPCLL__d1.dcp">
   <File Type="VDS-TIMINGSUMMARY" Name="chi_GHPCLL__d1_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="chi_GHPCLL__d1.dcp"/>
   <File Type="RDS-UTIL-PB" Name="chi_GHPCLL__d1_utilization_synth.pb"/>
@@ -76,14 +76,14 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/new/chi_GHPCLL_xdc.xdc">
+    <File Path="$PSRCDIR/constrs_1/new/chi.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
     <Config>
-      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/chi_GHPCLL_xdc.xdc"/>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/chi.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
@@ -102,7 +102,12 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
-    <Step Id="synth_design"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design">
+      <Option Id="FlattenHierarchy">1</Option>
+      <Option Id="MoreOptsStr"><![CDATA[-mode out_of_context]]></Option>
+    </Step>
   </Strategy>
 </GenRun>

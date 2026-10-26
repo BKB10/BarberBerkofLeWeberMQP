@@ -1,0 +1,28 @@
+#
+# An unexpected error has occurred (6) Aborted
+#
+Stack:
+/lib64/libc.so.6(+0x4e5b0) [0x7fcff7e1a5b0]
+/lib64/libc.so.6(gsignal+0x10f) [0x7fcff7e1a52f]
+/lib64/libc.so.6(abort+0x127) [0x7fcff7dede65]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/Rhel/8/libstdc++.so.6(+0x8ba13) [0x7fcff8450a13]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/Rhel/8/libstdc++.so.6(+0x91b86) [0x7fcff8456b86]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/Rhel/8/libstdc++.so.6(+0x91bc1) [0x7fcff8456bc1]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libxv_common.so(hdi::tcltasks::detail::collection_wrapper_base::~collection_wrapper_base()+0x27f) [0x7fd0022b26f5]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libxv_common.so(+0x7118d5) [0x7fd0023c48d5]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libxv_common.so(hdi::tcltasks::detail::collection_wrapper_base::decr_ref() const+0x27) [0x7fd0022af7db]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libxv_tcltasks.so(+0x1109c78) [0x7fcfe2f53c78]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libxv_tcltasks.so(+0x1104212) [0x7fcfe2f4e212]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libxv_tcltasks.so(+0x1104261) [0x7fcfe2f4e261]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libboost_program_options.so.1.72.0(boost::program_options::option_description::~option_description()+0xd1) [0x7fd002f5abe1]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libboost_program_options.so.1.72.0(boost::program_options::option_description::~option_description()+0x11) [0x7fd002f5ac31]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libxv_common.so(boost::detail::sp_counted_impl_p<boost::program_options::option_description>::dispose()+0x13) [0x7fd0025a6d3b]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libxv_common.so(+0x42fc24) [0x7fd0020e2c24]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libxv_common.so(hdi::tcltasks::options_description::~options_description()+0xe1) [0x7fd00265cbb3]
+/lib64/libc.so.6(+0x50ccc) [0x7fcff7e1cccc]
+/lib64/libc.so.6(on_exit+0) [0x7fcff7e1ce00]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libxv_synth.so(HARTSInfo::periodicalDetect()+0xfb) [0x7fcfd85f48eb]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libxv_common.so(std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)()> > >::_M_run()+0x7) [0x7fd0024ccfbf]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/Rhel/8/libstdc++.so.6(+0xbadff) [0x7fcff847fdff]
+/lib64/libpthread.so.0(+0x81ca) [0x7fcff7bb41ca]
+/lib64/libc.so.6(clone+0x43) [0x7fcff7e058d3]

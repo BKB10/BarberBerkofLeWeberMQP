@@ -90,8 +90,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/hvle/BarberBerkofLeWeberMQP/MQP_Chi/MQP_Chi.srcs/constrs_1/new/chi_GHPCLL_xdc.xdc
-set_property used_in_implementation false [get_files /home/hvle/BarberBerkofLeWeberMQP/MQP_Chi/MQP_Chi.srcs/constrs_1/new/chi_GHPCLL_xdc.xdc]
+read_xdc /home/hvle/BarberBerkofLeWeberMQP/MQP_Chi/MQP_Chi.srcs/constrs_1/new/chi.xdc
+set_property used_in_implementation false [get_files /home/hvle/BarberBerkofLeWeberMQP/MQP_Chi/MQP_Chi.srcs/constrs_1/new/chi.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
@@ -99,7 +99,7 @@ read_checkpoint -auto_incremental -incremental /home/hvle/BarberBerkofLeWeberMQP
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top chi_GHPCLL__d1 -part xc7k70tfbv676-1
+synth_design -top chi_GHPCLL__d1 -part xc7k70tfbv676-1 -flatten_hierarchy none -mode out_of_context
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
