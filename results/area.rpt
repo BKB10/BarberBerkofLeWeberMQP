@@ -1,0 +1,89 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Mon Oct 26 15:18:38 2026
+| Host         : synopsys-vernam running 64-bit Red Hat Enterprise Linux 8.10 (Ootpa)
+| Command      : report_design_analysis -file results/area.rpt
+| Design       : chi_GHPCLL__d1
+| Device       : xc7k70t
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Design Analysis
+
+Table of Contents
+-----------------
+1. Setup Path Characteristics 1-1
+2. Logic Level Distribution
+3. Placer Final Level Congestion Reporting
+4. Initial Estimated Router Congestion Reporting
+
+1. Setup Path Characteristics 1-1
+---------------------------------
+
++---------------------------+----------------------------------+
+|      Characteristics      |              Path #1             |
++---------------------------+----------------------------------+
+| Requirement               | 10.000                           |
+| Path Delay                | 0.870                            |
+| Logic Delay               | 0.198(23%)                       |
+| Net Delay                 | 0.672(77%)                       |
+| Clock Skew                | 0.638                            |
+| Slack                     | 8.783                            |
+| Clock Uncertainty         | 0.035                            |
+| Clock Pair Classification | Timed                            |
+| Clock Delay Group         | Same Clock                       |
+| Logic Levels              | 2                                |
+| Routes                    | NA                               |
+| Logical Path              | LUT6/Fresh[260]-(1)-MUXF7-FDRE/D |
+| Start Point Clock         | clk                              |
+| End Point Clock           | clk                              |
+| DSP Block                 | None                             |
+| RAM Registers             | None-None                        |
+| IO Crossings              | 0                                |
+| Config Crossings          | 0                                |
+| SLR Crossings             | 0                                |
+| PBlocks                   | 0                                |
+| High Fanout               | 1                                |
+| ASYNC REG                 | 0                                |
+| Dont Touch                | 0                                |
+| Mark Debug                | 0                                |
+| Start Point Pin Primitive | Fresh[260]                       |
+| End Point Pin Primitive   | FDRE/D                           |
+| Start Point Pin           | Fresh[260]                       |
+| End Point Pin             | s_current_state_reg/D            |
++---------------------------+----------------------------------+
+* Bounding box calculated as % of dimensions for the target device (188, 400)
+
+
+2. Logic Level Distribution
+---------------------------
+
++-----------------+-------------+------+
+| End Point Clock | Requirement |   2  |
++-----------------+-------------+------+
+| clk             | 10.000ns    | 1000 |
++-----------------+-------------+------+
+* Columns represent the logic levels per end point clock
+** Distribution is for top worst 1000 paths
+
+
+3. Placer Final Level Congestion Reporting
+------------------------------------------
+
++-----------+------+-------+------------+--------+---------------+----------------+-----+--------+------+------+------+-----+-------+-----+------------+
+| Direction | Type | Level | Congestion | Window | Combined LUTs | Avg LUT Inputs | LUT | LUTRAM | Flop | MUXF | RAMB | DSP | CARRY | SRL | Cell Names |
++-----------+------+-------+------------+--------+---------------+----------------+-----+--------+------+------+------+-----+-------+-----+------------+
+* No congestion windows are found above level 5
+
+
+4. Initial Estimated Router Congestion Reporting
+------------------------------------------------
+
++-----------+------+-------+------------------+--------+---------------+----------------+-----+--------+------+------+------+-----+-------+-----+------------+
+| Direction | Type | Level | Percentage Tiles | Window | Combined LUTs | Avg LUT Inputs | LUT | LUTRAM | Flop | MUXF | RAMB | DSP | CARRY | SRL | Cell Names |
++-----------+------+-------+------------------+--------+---------------+----------------+-----+--------+------+------+------+-----+-------+-----+------------+
+* No router congested regions found.
+** No initial estimated congestion windows are found above level 5
+
+

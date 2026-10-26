@@ -1,0 +1,73 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sun Oct 25 13:06:34 2026
+# Process ID         : 286100
+# Current directory  : /home/hvle/BarberBerkofLeWeberMQP
+# Command line       : vivado
+# Log file           : /home/hvle/BarberBerkofLeWeberMQP/vivado.log
+# Journal file       : /home/hvle/BarberBerkofLeWeberMQP/vivado.jou
+# Running On         : synopsys-vernam
+# Platform           : rhel
+# Operating System   : Red Hat Enterprise Linux 8.10 (Ootpa)
+# Processor Detail   : Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz
+# CPU Frequency      : 2399.996 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 4
+# Host memory        : 33431 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 33431 MB
+# Available Virtual  : 29266 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/hvle/BarberBerkofLeWeberMQP/MQP_Chi/MQP_Chi.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+get_files -filter {FILE_TYPE == XDC}
+read_xdc
+read_xdc -help
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+get_input_delays -clock clk [get_ports {Fresh[0]}]
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+get_input_delays -clock clk [get_ports {Fresh[0]}]
+get_property -min delay_value [get_ports {Fresh[0]}]
+get_property -min delay_value [get_ports {Fresh[0]}]
+# Check what constraints are active
+report_clock_interaction
+report_timing -from [get_ports {Fresh[0]}] -delay_type min -max_paths 1
+get_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} \
+             [get_runs synth_1]
+get_property {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} \
+             [get_runs synth_1]
+set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} \
+             -value {-mode out_of_context -flatten_hierarchy none} \
+             [get_runs synth_1]
+set_property {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} {-mode out_of_context -flatten_hierarchy none} [get_runs synth_1]
+set_property STEPS.SYNTH_DESIGN.ARGS.FLATTEN_HIERARCHY none [get_runs synth_1]
+set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} \
+             -value {-mode out_of_context -flatten_hierarchy none} \
+             -objects [get_runs synth_1]
+set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode out_of_context} -objects [get_runs synth_1]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1

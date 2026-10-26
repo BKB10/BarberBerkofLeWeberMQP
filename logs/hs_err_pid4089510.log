@@ -1,0 +1,27 @@
+#
+# An unexpected error has occurred (6) Aborted
+#
+Stack:
+/lib64/libc.so.6(+0x4e5b0) [0x7ff034e6b5b0]
+/lib64/libc.so.6(gsignal+0x10f) [0x7ff034e6b52f]
+/lib64/libc.so.6(abort+0x127) [0x7ff034e3ee65]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/Rhel/8/libstdc++.so.6(+0x8ba13) [0x7ff0354a1a13]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/Rhel/8/libstdc++.so.6(+0x91b86) [0x7ff0354a7b86]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/Rhel/8/libstdc++.so.6(+0x91bc1) [0x7ff0354a7bc1]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libxv_common.so(hdi::tcltasks::detail::collection_wrapper_base::~collection_wrapper_base()+0x27f) [0x7ff03f2fd6f5]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libxv_common.so(+0x5167f5) [0x7ff03f2147f5]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libxv_common.so(hdi::tcltasks::detail::collection_wrapper_base::decr_ref() const+0x27) [0x7ff03f2fa7db]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libxv_tcltasks.so(+0x1109b28) [0x7ff01ffa4b28]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libxv_tcltasks.so(+0x11040e2) [0x7ff01ff9f0e2]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libxv_tcltasks.so(+0x1104131) [0x7ff01ff9f131]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libboost_program_options.so.1.72.0(boost::program_options::option_description::~option_description()+0xd1) [0x7ff03ffabbe1]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libboost_program_options.so.1.72.0(boost::program_options::option_description::~option_description()+0x11) [0x7ff03ffabc31]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libxv_common.so(boost::detail::sp_counted_impl_p<boost::program_options::option_description>::dispose()+0x13) [0x7ff03f5f1d3b]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libxv_common.so(+0x42fc24) [0x7ff03f12dc24]
+/usr/local/Xilinx/2025.2/Vivado/lib/lnx64.o/libxv_common.so(hdi::tcltasks::options_description::~options_description()+0xe1) [0x7ff03f6a7bb3]
+/lib64/libc.so.6(+0x50ccc) [0x7ff034e6dccc]
+/lib64/libc.so.6(on_exit+0) [0x7ff034e6de00]
+/lib64/libX11.so.6(_XIOError+0x5c) [0x7ff033b26dcc]
+/lib64/libX11.so.6(_XEventsQueued+0x85) [0x7ff033b24545]
+/lib64/libX11.so.6(XEventsQueued+0x50) [0x7ff033b15e50]
+[0x7fefd6bdaf6f]
