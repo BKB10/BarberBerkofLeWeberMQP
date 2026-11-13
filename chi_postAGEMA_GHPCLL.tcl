@@ -19,7 +19,7 @@ synth_design -top chi_GHPCLL__d1 \
 
 	
 # 4. Constraints
-# set_property HD.CLK_SRC BUFGCTRL_X0Y0 [get_ports clk]
+set_property HD.CLK_SRC BUFGCTRL_X0Y0 [get_ports clk]
 create_clock -name clk -period 10 [get_ports clk]
 set_input_delay -min 1.0 -clock clk [get_ports {Fresh[*]}]
 set_input_delay -max 1.0 -clock clk [get_ports {Fresh[*]}]
@@ -33,6 +33,6 @@ place_design
 route_design
 
 # 6. Reports
-report_timing_summary -file results/timing.rpt
-report_utilization    -file results/util.rpt
-report_design_analysis -file results/area.rpt
+report_timing_summary -file results/GHPCLL/timing.rpt
+report_utilization    -file results/GHPCLL/util.rpt
+report_design_analysis -file results/GHPCLL/area.rpt

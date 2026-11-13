@@ -1,9 +1,9 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Mon Oct 26 15:18:38 2026
+| Date         : Mon Oct 26 16:28:57 2026
 | Host         : synopsys-vernam running 64-bit Red Hat Enterprise Linux 8.10 (Ootpa)
-| Command      : report_design_analysis -file results/area.rpt
+| Command      : report_design_analysis -file results/GHPCLL/area.rpt
 | Design       : chi_GHPCLL__d1
 | Device       : xc7k70t
 | Design State : Routed

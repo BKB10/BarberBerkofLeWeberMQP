@@ -1,0 +1,256 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Oct 26 23:50:36 2026
+# Process ID         : 574132
+# Current directory  : /home/hvle/BarberBerkofLeWeberMQP
+# Command line       : vivado -mode batch -source chi_LUT3_GHPC.tcl -log ./logs/vivado.log -journal ./logs/vivado.jou
+# Log file           : /home/hvle/BarberBerkofLeWeberMQP/./logs/vivado.log
+# Journal file       : /home/hvle/BarberBerkofLeWeberMQP/./logs/vivado.jou
+# Running On         : synopsys-vernam
+# Platform           : rhel
+# Operating System   : Red Hat Enterprise Linux 8.10 (Ootpa)
+# Processor Detail   : Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz
+# CPU Frequency      : 2399.996 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 4
+# Host memory        : 33431 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 33431 MB
+# Available Virtual  : 27258 MB
+#-----------------------------------------------------------
+source chi_LUT3_GHPC.tcl
+# create_project -in_memory -part xc7k70tfbv676-1
+# read_vhdl -vhdl2008 {
+#     GHPC_Gadget/GHPC_pkg.vhd
+#     GHPC_Gadget/reg.vhd
+#     GHPC_Gadget/GHPC_AND_reg.vhd
+#     GHPC_Gadget/GHPC_Step2.vhd
+#     AGEMA_chi_GHPC_Gadgets/rtl/GHPC_Step1_LUT3.vhd
+#     AGEMA_chi_GHPC_Gadgets/rtl/GHPC_Gadget_LUT3.vhd
+#     AGEMA_chi_GHPC_Gadgets/rtl/LUT3_GHPC.vhd
+# }
+# synth_design -top LUT3_GHPC \
+#              -part xc7k70tfbv676-1 \
+#              -mode out_of_context \
+#              -flatten_hierarchy none \
+#              -generic {INIT=180 low_latency=0 pipeline=1}
+Command: synth_design -top LUT3_GHPC -part xc7k70tfbv676-1 -mode out_of_context -flatten_hierarchy none -generic {INIT=180 low_latency=0 pipeline=1}
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 574292
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2271.891 ; gain = 464.703 ; free physical = 8404 ; free virtual = 24902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'LUT3_GHPC' [/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/rtl/LUT3_GHPC.vhd:24]
+	Parameter INIT bound to: 32'sb00000000000000000000000010110100 
+	Parameter low_latency bound to: 0 - type: integer 
+	Parameter pipeline bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'GHPC_Gadget_LUT3' [/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/rtl/GHPC_Gadget_LUT3.vhd:30]
+	Parameter in_size bound to: 3 - type: integer 
+	Parameter out_size bound to: 1 - type: integer 
+	Parameter low_latency bound to: 0 - type: integer 
+	Parameter pipeline bound to: 1 - type: integer 
+	Parameter INIT bound to: 8'b10110100 
+INFO: [Synth 8-638] synthesizing module '\reg ' [/home/hvle/BarberBerkofLeWeberMQP/GHPC_Gadget/reg.vhd:37]
+INFO: [Synth 8-256] done synthesizing module '\reg ' (0#1) [/home/hvle/BarberBerkofLeWeberMQP/GHPC_Gadget/reg.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'GHPC_Step1_LUT3' [/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/rtl/GHPC_Step1_LUT3.vhd:30]
+	Parameter in_size bound to: 3 - type: integer 
+	Parameter out_size bound to: 1 - type: integer 
+	Parameter fresh_size bound to: 1 - type: integer 
+	Parameter low_latency bound to: 0 - type: integer 
+	Parameter pipeline bound to: 1 - type: integer 
+	Parameter INIT bound to: 8'b10110100 
+INFO: [Synth 8-256] done synthesizing module 'GHPC_Step1_LUT3' (0#1) [/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/rtl/GHPC_Step1_LUT3.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'GHPC_Step2' [/home/hvle/BarberBerkofLeWeberMQP/GHPC_Gadget/GHPC_Step2.vhd:46]
+	Parameter in_size bound to: 3 - type: integer 
+	Parameter out_size bound to: 1 - type: integer 
+	Parameter low_latency bound to: 0 - type: integer 
+	Parameter pipeline bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'GHPC_AND_reg' [/home/hvle/BarberBerkofLeWeberMQP/GHPC_Gadget/GHPC_AND_reg.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'GHPC_AND_reg' (0#1) [/home/hvle/BarberBerkofLeWeberMQP/GHPC_Gadget/GHPC_AND_reg.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'GHPC_Step2' (0#1) [/home/hvle/BarberBerkofLeWeberMQP/GHPC_Gadget/GHPC_Step2.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'GHPC_Gadget_LUT3' (0#1) [/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/rtl/GHPC_Gadget_LUT3.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'LUT3_GHPC' (0#1) [/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi_GHPC_Gadgets/rtl/LUT3_GHPC.vhd:24]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2358.859 ; gain = 551.672 ; free physical = 8312 ; free virtual = 24810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2373.703 ; gain = 566.516 ; free physical = 8305 ; free virtual = 24803
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2373.703 ; gain = 566.516 ; free physical = 8304 ; free virtual = 24802
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2382.609 ; gain = 575.422 ; free physical = 8290 ; free virtual = 24789
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+	   8 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2487.531 ; gain = 680.344 ; free physical = 8177 ; free virtual = 24675
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2493.469 ; gain = 686.281 ; free physical = 8171 ; free virtual = 24670
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2501.477 ; gain = 694.289 ; free physical = 8162 ; free virtual = 24661
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2676.289 ; gain = 869.102 ; free physical = 8004 ; free virtual = 24502
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2676.289 ; gain = 869.102 ; free physical = 8004 ; free virtual = 24502
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2676.289 ; gain = 869.102 ; free physical = 8004 ; free virtual = 24502
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     8|
+|2     |LUT3 |     8|
+|3     |LUT4 |     9|
+|4     |LUT5 |     1|
+|5     |FDRE |    21|
++------+-----+------+
+
+Report Instance Areas: 
++------+-----------------------------------------------------+-----------------+------+
+|      |Instance                                             |Module           |Cells |
++------+-----------------------------------------------------+-----------------+------+
+|1     |top                                                  |                 |    47|
+|2     |  g                                                  |GHPC_Gadget_LUT3 |    47|
+|3     |    \GEN_in[0].reg_ins1                              |reg__24          |     1|
+|4     |    \GEN_in[1].reg_ins1                              |reg__25          |     1|
+|5     |    \GEN_in[2].reg_ins1                              |reg__26          |     1|
+|6     |    Step1_ins                                        |GHPC_Step1_LUT3  |    16|
+|7     |      \GEN_out[0].GEN_Step1_1[0].reg_ins             |reg__27          |     1|
+|8     |      \GEN_out[0].GEN_Step1_1[1].reg_ins             |reg__28          |     1|
+|9     |      \GEN_out[0].GEN_Step1_1[2].reg_ins             |reg__29          |     1|
+|10    |      \GEN_out[0].GEN_Step1_1[3].reg_ins             |reg__30          |     1|
+|11    |      \GEN_out[0].GEN_Step1_1[4].reg_ins             |reg__31          |     1|
+|12    |      \GEN_out[0].GEN_Step1_1[5].reg_ins             |reg__32          |     1|
+|13    |      \GEN_out[0].GEN_Step1_1[6].reg_ins             |reg__33          |     1|
+|14    |      \GEN_out[0].GEN_Step1_1[7].reg_ins             |reg__34          |     1|
+|15    |    Step2_inst                                       |GHPC_Step2       |    26|
+|16    |      \GEN_normal.GEN_out[0].GEN_Step2[0].step2_ins  |GHPC_AND_reg__1  |     2|
+|17    |      \GEN_normal.GEN_out[0].GEN_Step2[1].step2_ins  |GHPC_AND_reg__2  |     2|
+|18    |      \GEN_normal.GEN_out[0].GEN_Step2[2].step2_ins  |GHPC_AND_reg__3  |     2|
+|19    |      \GEN_normal.GEN_out[0].GEN_Step2[3].step2_ins  |GHPC_AND_reg__4  |     2|
+|20    |      \GEN_normal.GEN_out[0].GEN_Step2[4].step2_ins  |GHPC_AND_reg__5  |     2|
+|21    |      \GEN_normal.GEN_out[0].GEN_Step2[5].step2_ins  |GHPC_AND_reg__6  |     2|
+|22    |      \GEN_normal.GEN_out[0].GEN_Step2[6].step2_ins  |GHPC_AND_reg__7  |     2|
+|23    |      \GEN_normal.GEN_out[0].GEN_Step2[7].step2_ins  |GHPC_AND_reg     |     2|
+|24    |    \GEN_out[0].GEN_normal.reg_out0_ins1             |reg__35          |     1|
+|25    |    \GEN_out[0].GEN_normal.reg_out0_ins2             |\reg             |     1|
++------+-----------------------------------------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2676.289 ; gain = 869.102 ; free physical = 8004 ; free virtual = 24502
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2676.289 ; gain = 869.102 ; free physical = 8004 ; free virtual = 24502
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2676.297 ; gain = 869.102 ; free physical = 8004 ; free virtual = 24502
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2690.164 ; gain = 0.000 ; free physical = 8150 ; free virtual = 24649
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2800.730 ; gain = 0.000 ; free physical = 8054 ; free virtual = 24553
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ceaae14d
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 2800.766 ; gain = 993.578 ; free physical = 8054 ; free virtual = 24553
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1755.173; main = 1755.173; forked = 291.654
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4023.598; main = 2800.734; forked = 1640.984
+# set_property HD.CLK_SRC BUFGCTRL_X0Y0 [get_ports clk]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC. 
+# create_clock -name clk -period 10 [get_ports clk]
+# set_input_delay -min 1.0 -clock clk [get_ports I0*]
+# set_input_delay -max 1.0 -clock clk [get_ports I0*]
+# set_input_delay -min 1.0 -clock clk [get_ports I1*]
+# set_input_delay -max 1.0 -clock clk [get_ports I1*]
+# set_input_delay -min 1.0 -clock clk [get_ports I2*]
+# set_input_delay -max 1.0 -clock clk [get_ports I2*]
+# set_input_delay -min 1.0 -clock clk [get_ports r*]
+# set_input_delay -max 1.0 -clock clk [get_ports r*]
+# set_output_delay -min 0.0 -clock clk [get_ports O*]
+# set_output_delay -max 0.0 -clock clk [get_ports O*]
+# report_timing_summary -file results/LUT3_GHPC/timing_LUT3_GHC.rpt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+report_timing_summary: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2864.762 ; gain = 63.996 ; free physical = 8044 ; free virtual = 24543
+# report_utilization -file results/LUT3_GHPC/util_LUT3_GHPC.rpt
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 26 23:51:16 2026...

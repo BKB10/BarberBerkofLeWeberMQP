@@ -3,12 +3,12 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Sun Oct 18 23:21:32 2026
-# Process ID         : 3999756
-# Current directory  : /home/hvle
-# Command line       : vivado
-# Log file           : /home/hvle/vivado.log
-# Journal file       : /home/hvle/vivado.jou
+# Start of session at: Mon Oct 26 23:44:44 2026
+# Process ID         : 570930
+# Current directory  : /home/hvle/BarberBerkofLeWeberMQP/MQP_Chi
+# Command line       : vivado -mode batch -source run_GHPC.tcl
+# Log file           : /home/hvle/BarberBerkofLeWeberMQP/MQP_Chi/vivado.log
+# Journal file       : /home/hvle/BarberBerkofLeWeberMQP/MQP_Chi/vivado.jou
 # Running On         : synopsys-vernam
 # Platform           : rhel
 # Operating System   : Red Hat Enterprise Linux 8.10 (Ootpa)
@@ -19,6 +19,6 @@
 # Host memory        : 33431 MB
 # Swap memory        : 0 MB
 # Total Virtual      : 33431 MB
-# Available Virtual  : 28167 MB
+# Available Virtual  : 29250 MB
 #-----------------------------------------------------------
-start_gui
+source run_GHPC.tcl

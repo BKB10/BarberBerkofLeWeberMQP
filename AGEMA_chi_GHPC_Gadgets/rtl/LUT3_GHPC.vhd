@@ -11,11 +11,13 @@ entity LUT3_GHPC is
    Generic (
       INIT        : integer := 0;
       low_latency : integer := 1;
-      pipeline    : integer := 1);
+      pipeline    : integer := 1;
+      in_size     : integer := 3;
+      out_size    : integer := 1);
    Port (
       I0, I1, I2 : in  std_logic_vector(1 downto 0);
       clk        : in  std_logic;
-      r          : in  std_logic_vector(7 downto 0);
+      r          : in  std_logic_vector(out_size*(1+low_latency*(2**in_size-1))-1 downto 0);
       O          : out std_logic_vector(1 downto 0));
 end LUT3_GHPC;
 
