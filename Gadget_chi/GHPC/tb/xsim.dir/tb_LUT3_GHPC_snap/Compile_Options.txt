@@ -1,0 +1,1 @@
+-top "tb_LUT3_GHPC" -snapshot "tb_LUT3_GHPC_snap" -lib "vhdl_golden" -L "vhdl_golden" -L "work" 

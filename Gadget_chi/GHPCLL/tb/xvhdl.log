@@ -1,0 +1,13 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/VHDL/AGEMA/GHPC_pkg.vhd" into library vhdl_golden
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/VHDL/AGEMA/reg.vhd" into library vhdl_golden
+INFO: [VRFC 10-3107] analyzing entity 'reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/VHDL/AGEMA/GHPC_AND_reg.vhd" into library vhdl_golden
+INFO: [VRFC 10-3107] analyzing entity 'GHPC_AND_reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/VHDL/AGEMA/GHPC_Step2.vhd" into library vhdl_golden
+INFO: [VRFC 10-3107] analyzing entity 'GHPC_Step2'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/VHDL/AGEMA_FPGA/GHPC_Step1_LUT3.vhd" into library vhdl_golden
+INFO: [VRFC 10-3107] analyzing entity 'GHPC_Step1_LUT3'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/VHDL/AGEMA_FPGA/GHPC_Gadget_LUT3.vhd" into library vhdl_golden
+INFO: [VRFC 10-3107] analyzing entity 'GHPC_Gadget_LUT3'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/VHDL/AGEMA_FPGA/LUT3_GHPC.vhd" into library vhdl_golden
+INFO: [VRFC 10-3107] analyzing entity 'LUT3_GHPC_vhdl'

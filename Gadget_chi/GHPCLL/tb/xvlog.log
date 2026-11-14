@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/Verilog/AGEMA/GHPC_reg.v" into library work
+INFO: [VRFC 10-311] analyzing module GHPC_reg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/Verilog/AGEMA/GHPC_AND_reg.v" into library work
+INFO: [VRFC 10-311] analyzing module GHPC_AND_reg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/Verilog/AGEMA/GHPC_Step2.v" into library work
+INFO: [VRFC 10-311] analyzing module GHPC_Step2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/Verilog/AGEMA_FPGA/GHPC_Step1_LUT3.v" into library work
+INFO: [VRFC 10-311] analyzing module GHPC_Step1_LUT3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/Verilog/AGEMA_FPGA/GHPC_Gadget_LUT3.v" into library work
+INFO: [VRFC 10-311] analyzing module GHPC_Gadget_LUT3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/Verilog/AGEMA_FPGA/LUT3_GHPC.v" into library work
+INFO: [VRFC 10-311] analyzing module LUT3_GHPC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/tb/tb_LUT3_GHPCLL.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_LUT3_GHPCLL
