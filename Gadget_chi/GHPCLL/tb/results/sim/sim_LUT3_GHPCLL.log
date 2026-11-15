@@ -1,54 +1,32 @@
-
-****** Vivado v2025.2 (64-bit)
-  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
-  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
-  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-  **** Start of session at: Sat Nov 14 00:36:35 2026
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
-
-source run_LUT3_GHPCLL.tcl
-# set HOME_DIR   $env(HOME)
-# set REPO       $HOME_DIR/BarberBerkofLeWeberMQP
-# set GHPCLL_Gadget $REPO/Gadget_chi/GHPCLL
-# exec xvlog -sv $GHPCLL_Gadget/rtl/Verilog/AGEMA/GHPC_reg.v \
-#           $GHPCLL_Gadget/rtl/Verilog/AGEMA/GHPC_AND_reg.v \
-#           $GHPCLL_Gadget/rtl/Verilog/AGEMA/GHPC_Step2.v \
-#           $GHPCLL_Gadget/rtl/Verilog/AGEMA_FPGA/GHPC_Step1_LUT3.v \
-#           $GHPCLL_Gadget/rtl/Verilog/AGEMA_FPGA/GHPC_Gadget_LUT3.v \
-#           $GHPCLL_Gadget/rtl/Verilog/AGEMA_FPGA/LUT3_GHPC.v \
-#           $GHPCLL_Gadget/tb/tb_LUT3_GHPCLL.v
-# exec xvhdl -2008 -work vhdl_golden \
-#           $GHPCLL_Gadget/rtl/VHDL/AGEMA/GHPC_pkg.vhd \
-#           $GHPCLL_Gadget/rtl/VHDL/AGEMA/reg.vhd \
-# 	  $GHPCLL_Gadget/rtl/VHDL/AGEMA/GHPC_AND_reg.vhd \
-#           $GHPCLL_Gadget/rtl/VHDL/AGEMA/GHPC_Step2.vhd \
-#           $GHPCLL_Gadget/rtl/VHDL/AGEMA_FPGA/GHPC_Step1_LUT3.vhd \
-#           $GHPCLL_Gadget/rtl/VHDL/AGEMA_FPGA/GHPC_Gadget_LUT3.vhd \
-#           $GHPCLL_Gadget/rtl/VHDL/AGEMA_FPGA/LUT3_GHPC.vhd
-# exec xelab -top tb_LUT3_GHPCLL \
-#       -snapshot tb_LUT3_GHPCLL_snap \
-#       -lib vhdl_golden \
-#       -L vhdl_golden \
-#       -L work
-Vivado Simulator v2025.2
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: /usr/local/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab -top tb_LUT3_GHPCLL -snapshot tb_LUT3_GHPCLL_snap -lib vhdl_golden -L vhdl_golden -L work 
-Multi-threading is on. Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-ERROR: [XSIM 43-4099] "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/Verilog/AGEMA_FPGA/LUT3_GHPC.v" Line 7. Module LUT3_GHPC(INIT=180) doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-child process exited abnormally
-    while executing
-"exec xelab -top tb_LUT3_GHPCLL \
-      -snapshot tb_LUT3_GHPCLL_snap \
-      -lib vhdl_golden \
-      -L vhdl_golden \
-      -L work"
-    (file "run_LUT3_GHPCLL.tcl" line 45)
-INFO: [Common 17-206] Exiting Vivado at Sat Nov 14 00:36:45 2026...
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sat Nov 14 19:50:47 2026
+# Process ID         : 1080773
+# Current directory  : /home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/tb
+# Command line       : xsim -log /home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/tb/results/sim/sim_LUT3_GHPCLL.log -mode tcl -source {xsim.dir/tb_LUT3_GHPCLL_snap/xsim_script.tcl}
+# Log file           : /home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/tb/results/sim/sim_LUT3_GHPCLL.log
+# Journal file       : /home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/tb/xsim.jou
+# Running On         : synopsys-vernam
+# Platform           : rhel
+# Operating System   : Red Hat Enterprise Linux 8.10 (Ootpa)
+# Processor Detail   : Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz
+# CPU Frequency      : 2399.996 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 4
+# Host memory        : 33431 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 33431 MB
+# Available Virtual  : 28303 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_LUT3_GHPCLL_snap/xsim_script.tcl
+# xsim {tb_LUT3_GHPCLL_snap} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: 1000 vectors matched.
+$finish called at time : 10006 ns : File "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/tb/tb_LUT3_GHPCLL.v" Line 86
+exit
+INFO: xsimkernel Simulation Memory Usage: 510256 KB (Peak: 567592 KB), Simulation CPU Usage: 1890 ms
+INFO: [Common 17-206] Exiting xsim at Sat Nov 14 19:50:51 2026...

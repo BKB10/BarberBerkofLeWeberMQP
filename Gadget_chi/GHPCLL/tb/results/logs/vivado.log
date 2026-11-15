@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Sat Nov 14 00:26:34 2026
-# Process ID         : 1059831
+# Start of session at: Sat Nov 14 19:50:34 2026
+# Process ID         : 1080425
 # Current directory  : /home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/tb
 # Command line       : vivado -mode batch -source run_LUT3_GHPCLL.tcl
 # Log file           : /home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/tb/vivado.log
@@ -19,13 +19,14 @@
 # Host memory        : 33431 MB
 # Swap memory        : 0 MB
 # Total Virtual      : 33431 MB
-# Available Virtual  : 28749 MB
+# Available Virtual  : 28741 MB
 #-----------------------------------------------------------
 source run_LUT3_GHPCLL.tcl
 # set HOME_DIR   $env(HOME)
 # set REPO       $HOME_DIR/BarberBerkofLeWeberMQP
 # set GHPCLL_Gadget $REPO/Gadget_chi/GHPCLL
 # exec xvlog -sv $GHPCLL_Gadget/rtl/Verilog/AGEMA/GHPC_reg.v \
+#           $GHPCLL_Gadget/rtl/Verilog/AGEMA/GHPC_AND_reg.v \
 #           $GHPCLL_Gadget/rtl/Verilog/AGEMA/GHPC_Step2.v \
 #           $GHPCLL_Gadget/rtl/Verilog/AGEMA_FPGA/GHPC_Step1_LUT3.v \
 #           $GHPCLL_Gadget/rtl/Verilog/AGEMA_FPGA/GHPC_Gadget_LUT3.v \
@@ -33,24 +34,20 @@ source run_LUT3_GHPCLL.tcl
 #           $GHPCLL_Gadget/tb/tb_LUT3_GHPCLL.v
 # exec xvhdl -2008 -work vhdl_golden \
 #           $GHPCLL_Gadget/rtl/VHDL/AGEMA/GHPC_pkg.vhd \
-#           $GHPCLL_Gadget/rtl/VHDL/AGEMA/reg.vhd \
+# 	  $GHPCLL_Gadget/rtl/VHDL/AGEMA/reg.vhd \
+# 	  $GHPCLL_Gadget/rtl/VHDL/AGEMA/GHPC_AND_reg.vhd \
 #           $GHPCLL_Gadget/rtl/VHDL/AGEMA/GHPC_Step2.vhd \
 #           $GHPCLL_Gadget/rtl/VHDL/AGEMA_FPGA/GHPC_Step1_LUT3.vhd \
 #           $GHPCLL_Gadget/rtl/VHDL/AGEMA_FPGA/GHPC_Gadget_LUT3.vhd \
 #           $GHPCLL_Gadget/rtl/VHDL/AGEMA_FPGA/LUT3_GHPC.vhd
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/VHDL/AGEMA/GHPC_pkg.vhd" into library vhdl_golden
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/VHDL/AGEMA/reg.vhd" into library vhdl_golden
-INFO: [VRFC 10-3107] analyzing entity 'reg'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/VHDL/AGEMA/GHPC_Step2.vhd" into library vhdl_golden
-INFO: [VRFC 10-3107] analyzing entity 'GHPC_Step2'
-ERROR: [VRFC 10-2987] 'ghpc_and_reg' is not compiled in library 'vhdl_golden' [/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/VHDL/AGEMA/GHPC_Step2.vhd:63]
-ERROR: [VRFC 10-9458] unit 'behavioral' is ignored due to previous errors [/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/VHDL/AGEMA/GHPC_Step2.vhd:46]
-INFO: [VRFC 10-8704] VHDL file '/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/VHDL/AGEMA/GHPC_Step2.vhd' is ignored due to errors
-child process exited abnormally
-    while executing
-"exec xvhdl -2008 -work vhdl_golden \
-          $GHPCLL_Gadget/rtl/VHDL/AGEMA/GHPC_pkg.vhd \
-          $GHPCLL_Gadget/rtl/VHDL/AGEMA/reg.vhd \
-        ..."
-    (file "run_LUT3_GHPCLL.tcl" line 35)
-INFO: [Common 17-206] Exiting Vivado at Sat Nov 14 00:26:42 2026...
+# exec xelab -top tb_LUT3_GHPCLL \
+#       -snapshot tb_LUT3_GHPCLL_snap \
+#       -lib vhdl_golden \
+#       -L vhdl_golden \
+#       -L work
+# exec xsim tb_LUT3_GHPCLL_snap -runall \
+#      -log $GHPCLL_Gadget/tb/results/sim/sim_LUT3_GHPCLL.log
+# foreach f [glob -nocomplain *.log *.jou *.pb *.str] {
+#     file rename -force $f $GHPCLL_Gadget/tb/results/logs/$f
+# }
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 14 19:50:51 2026...

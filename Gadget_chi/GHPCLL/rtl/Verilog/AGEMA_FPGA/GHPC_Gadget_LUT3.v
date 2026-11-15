@@ -3,6 +3,8 @@
 // Changes vs original GHPC_Gadget.vhd preserved: entity name, INIT generic, Step1 instance.
 // reg → GHPC_reg (renamed to avoid Verilog keyword conflict).
 
+`timescale 1ns/1ps
+
 module GHPC_Gadget_LUT3 #(
     parameter integer in_size     = 3,
     parameter integer out_size    = 1,

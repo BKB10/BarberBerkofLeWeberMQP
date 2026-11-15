@@ -35,7 +35,7 @@ exec xvlog -sv $GHPCLL_Gadget/rtl/Verilog/AGEMA/GHPC_reg.v \
 
 exec xvhdl -2008 -work vhdl_golden \
           $GHPCLL_Gadget/rtl/VHDL/AGEMA/GHPC_pkg.vhd \
-          $GHPCLL_Gadget/rtl/VHDL/AGEMA/reg.vhd \
+	  $GHPCLL_Gadget/rtl/VHDL/AGEMA/reg.vhd \
 	  $GHPCLL_Gadget/rtl/VHDL/AGEMA/GHPC_AND_reg.vhd \
           $GHPCLL_Gadget/rtl/VHDL/AGEMA/GHPC_Step2.vhd \
           $GHPCLL_Gadget/rtl/VHDL/AGEMA_FPGA/GHPC_Step1_LUT3.vhd \
@@ -49,7 +49,7 @@ exec xelab -top tb_LUT3_GHPCLL \
       -L work
 
 exec xsim tb_LUT3_GHPCLL_snap -runall \
-     -log $GHPC_Gadget/tb/results/sim/sim_LUT3_GHPCLL.log
+     -log $GHPCLL_Gadget/tb/results/sim/sim_LUT3_GHPCLL.log
 
 foreach f [glob -nocomplain *.log *.jou *.pb *.str] {
     file rename -force $f $GHPCLL_Gadget/tb/results/logs/$f
