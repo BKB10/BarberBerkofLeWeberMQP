@@ -10,5 +10,6 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hvle/BarberBerkofLeWebe
 INFO: [VRFC 10-311] analyzing module GHPC_Gadget_LUT3
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/Verilog/AGEMA_FPGA/LUT3_GHPC.v" into library work
 INFO: [VRFC 10-311] analyzing module LUT3_GHPC
+WARNING: [VRFC 10-8497] literal value 'hb00 truncated to fit in 8 bits [/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/Verilog/AGEMA_FPGA/LUT3_GHPC.v:10]
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/tb/tb_LUT3_GHPCLL.v" into library work
 INFO: [VRFC 10-311] analyzing module tb_LUT3_GHPCLL

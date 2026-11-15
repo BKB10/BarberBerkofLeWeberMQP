@@ -49,7 +49,7 @@ exec xelab -top tb_LUT3_GHPCLL \
       -L work
 
 exec xsim tb_LUT3_GHPCLL_snap -runall \
-     -log $GHPCLL_Gadget/tb/results/sim/sim_LUT3_GHPCLL.log
+     -log $GHPCLL_Gadget/tb/results/sim/sim_LUT3_GHPCLL_latest.log
 
 foreach f [glob -nocomplain *.log *.jou *.pb *.str] {
     file rename -force $f $GHPCLL_Gadget/tb/results/logs/$f

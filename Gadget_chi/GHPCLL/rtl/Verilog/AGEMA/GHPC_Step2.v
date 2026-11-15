@@ -11,7 +11,7 @@ module GHPC_Step2 #(
     input  wire [out_size*(2**in_size)-1:0] Step1_reg,
     input  wire [in_size-1:0]               input_sel,
     input  wire                             clk,
-    output reg  [out_size-1:0]              out
+    output wire  [out_size-1:0]              out
 );
     wire [2**in_size-1:0] in_comb;
     wire [out_size*(2**in_size)-1:0] Step2_reg;

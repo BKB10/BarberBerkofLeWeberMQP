@@ -18,7 +18,7 @@ Compiling architecture behavioral of entity vhdl_golden.reg [reg_default]
 Compiling architecture behavioral of entity vhdl_golden.GHPC_Step1_LUT3 [\GHPC_Step1_LUT3(in_size=3,out_s...]
 Compiling architecture behavioral of entity vhdl_golden.GHPC_Step2 [\GHPC_Step2(in_size=3,out_size=1...]
 Compiling architecture behavioral of entity vhdl_golden.GHPC_Gadget_LUT3 [\GHPC_Gadget_LUT3(in_size=3,pipe...]
-Compiling module work.LUT3_GHPC(INIT=180)
+Compiling module work.LUT3_GHPC(INIT=8'b10110100)
 Compiling architecture behavioral of entity vhdl_golden.GHPC_Step1_LUT3 [\GHPC_Step1_LUT3(in_size=3,out_s...]
 Compiling architecture behavioral of entity vhdl_golden.GHPC_Gadget_LUT3 [\GHPC_Gadget_LUT3(in_size=3,pipe...]
 Compiling architecture structural of entity vhdl_golden.LUT3_GHPC_vhdl [\LUT3_GHPC_vhdl(init=180)\]

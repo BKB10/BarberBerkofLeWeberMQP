@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sat Nov 14 21:37:01 2026
+# Process ID         : 1124081
+# Current directory  : /home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/tb
+# Command line       : xsim -log /home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/tb/results/sim/sim_LUT3_GHPCLL_latest.log -mode tcl -source {xsim.dir/tb_LUT3_GHPCLL_snap/xsim_script.tcl}
+# Log file           : /home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/tb/results/sim/sim_LUT3_GHPCLL_latest.log
+# Journal file       : /home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/tb/xsim.jou
+# Running On         : synopsys-vernam
+# Platform           : rhel
+# Operating System   : Red Hat Enterprise Linux 8.10 (Ootpa)
+# Processor Detail   : Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz
+# CPU Frequency      : 2399.996 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 4
+# Host memory        : 33431 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 33431 MB
+# Available Virtual  : 28293 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_LUT3_GHPCLL_snap/xsim_script.tcl
+# xsim {tb_LUT3_GHPCLL_snap} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: 1000 vectors matched.
+$finish called at time : 10006 ns : File "/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/tb/tb_LUT3_GHPCLL.v" Line 86
+exit
+INFO: xsimkernel Simulation Memory Usage: 510256 KB (Peak: 567592 KB), Simulation CPU Usage: 1890 ms
+INFO: [Common 17-206] Exiting xsim at Sat Nov 14 21:37:06 2026...
