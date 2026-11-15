@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sat Nov 14 20:52:06 2026
+# Process ID         : 1103750
+# Current directory  : /home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPC/syn
+# Command line       : vivado -mode batch -source run_syn_GHPC.tcl
+# Log file           : /home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPC/syn/vivado.log
+# Journal file       : /home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPC/syn/vivado.jou
+# Running On         : synopsys-vernam
+# Platform           : rhel
+# Operating System   : Red Hat Enterprise Linux 8.10 (Ootpa)
+# Processor Detail   : Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz
+# CPU Frequency      : 2399.996 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 4
+# Host memory        : 33431 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 33431 MB
+# Available Virtual  : 28734 MB
+#-----------------------------------------------------------
+source run_syn_GHPC.tcl
+# set HOME_DIR $env(HOME)
+# set REPO     $HOME_DIR/BarberBerkofLeWeberMQP
+# set GHPC     $REPO/Gadget_chi/GHPC
+# create_project -in_memory -part xc7k70tfbv676-1
+# read_verilog [list \
+#     $GHPC/rtl/Verilog/AGEMA/GHPC_reg.v \
+#     $GHPC/rtl/Verilog/AGEMA/GHPC_AND_reg.v \
+#     $GHPC/rtl/Verilog/AGEMA/GHPC_Step2.v \
+#     $GHPC/rtl/Verilog/AGEMA_FPGA/GHPC_Step1_LUT3.v \
+#     $GHPC/rtl/Verilog/AGEMA_FPGA/GHPC_Gadget_LUT3.v \
+#     $GHPC/rtl/Verilog/AGEMA_FPGA/LUT3_GHPC.v \
+#     $REPO/AGEMA_chi/rtl/chi_xilinx_netlist_GHPC__d1.v \
+# ]
+# synth_design -top chi_GHPC__d1 \
+#              -part xc7k70tfbv676-1 \
+#              -mode out_of_context \
+#              -flatten_hierarchy none
+Command: synth_design -top chi_GHPC__d1 -part xc7k70tfbv676-1 -mode out_of_context -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1103837
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2273.551 ; gain = 467.359 ; free physical = 10423 ; free virtual = 26365
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-9315] concurrent assignment to a non-net 'out' is not permitted [/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPC/rtl/Verilog/AGEMA/GHPC_Step2.v:37]
+ERROR: [Synth 8-9315] concurrent assignment to a non-net 'out' is not permitted [/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPC/rtl/Verilog/AGEMA/GHPC_Step2.v:42]
+INFO: [Synth 8-10285] module 'GHPC_Step2' is ignored due to previous errors [/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPC/rtl/Verilog/AGEMA/GHPC_Step2.v:47]
+INFO: [Synth 8-9084] Verilog file '/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPC/rtl/Verilog/AGEMA/GHPC_Step2.v' ignored due to errors
+ERROR: [Synth 8-12188] Failed to read verilog '/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPC/rtl/Verilog/AGEMA/GHPC_Step2.v'
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2355.488 ; gain = 549.297 ; free physical = 10334 ; free virtual = 26276
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+7 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2355.496 ; gain = 549.305 ; free physical = 10334 ; free virtual = 26276
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1764.557; main = 1404.338; forked = 360.219
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3996.461; main = 2355.492; forked = 1640.969
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 14 20:52:23 2026...

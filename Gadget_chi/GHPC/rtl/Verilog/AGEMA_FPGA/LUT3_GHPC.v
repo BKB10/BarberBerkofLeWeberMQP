@@ -5,7 +5,7 @@
 // Direct structural conversion from LUT3_GHPC.vhd (GHPC variant).
 
 module LUT3_GHPC #(
-    parameter integer INIT     = 0,
+    parameter [7:0] INIT = 8'hb4,
     parameter integer pipeline = 1,
     parameter integer low_latency = 0		// This is a dummy param for netlist
 )(
