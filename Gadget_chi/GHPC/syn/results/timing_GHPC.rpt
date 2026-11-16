@@ -1,13 +1,13 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Sat Nov 14 21:08:02 2026
+| Date         : Sun Nov 15 13:53:10 2026
 | Host         : synopsys-vernam running 64-bit Red Hat Enterprise Linux 8.10 (Ootpa)
 | Command      : report_timing_summary -file /home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPC/syn/results/timing_GHPC.rpt
 | Design       : chi_GHPC__d1
 | Device       : 7k70t-fbv676
 | Speed File   : -1  PRODUCTION 1.12 2017-02-17
-| Design State : Synthesized
+| Design State : Routed
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 Timing Summary Report
@@ -138,10 +138,10 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      7.346        0.000                      0                36800        0.209        0.000                      0                36800        4.650        0.000                       0                 33600  
+      5.930        0.000                      0                36800       -0.319    -1818.141                  13366                36800        4.600        0.000                       0                 33600  
 
 
-All user specified timing constraints are met.
+Timing constraints are not met.
 
 
 ------------------------------------------------------------------------------------------------
@@ -161,7 +161,7 @@ clk    {0.000 5.000}      10.000          100.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-clk                 7.346        0.000                      0                36800        0.209        0.000                      0                36800        4.650        0.000                       0                 33600  
+clk                 5.930        0.000                      0                36800       -0.319    -1818.141                  13366                36800        4.600        0.000                       0                 33600  
 
 
 ------------------------------------------------------------------------------------------------
@@ -192,28 +192,28 @@ Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing 
 From Clock:  clk
   To Clock:  clk
 
-Setup :            0  Failing Endpoints,  Worst Slack        7.346ns,  Total Violation        0.000ns
-Hold  :            0  Failing Endpoints,  Worst Slack        0.209ns,  Total Violation        0.000ns
-PW    :            0  Failing Endpoints,  Worst Slack        4.650ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        5.930ns,  Total Violation        0.000ns
+Hold  :        13366  Failing Endpoints,  Worst Slack       -0.319ns,  Total Violation    -1818.141ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.600ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             7.346ns  (required time - arrival time)
-  Source:                 _0428_/g/Step2_inst/GEN_normal.GEN_out[0].GEN_Step2[3].and_reg_inst/Q_reg/C
+Slack (MET) :             5.930ns  (required time - arrival time)
+  Source:                 _1301_/g/Step2_inst/GEN_normal.GEN_out[0].GEN_Step2[2].and_reg_inst/Q_reg/C
                             (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            state_out1_s1[0]
+  Destination:            state_out1_s1[872]
                             (output port clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk
   Path Type:              Max at Slow Process Corner
   Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
-  Data Path Delay:        1.947ns  (logic 0.403ns (20.699%)  route 1.544ns (79.301%))
+  Data Path Delay:        2.378ns  (logic 0.414ns (17.409%)  route 1.964ns (82.591%))
   Logic Levels:           2  (LUT4=1 LUT5=1)
   Output Delay:           0.000ns
-  Clock Path Skew:        -0.672ns (DCD - SCD + CPR)
+  Clock Path Skew:        -1.657ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    0.000ns = ( 10.000 - 10.000 ) 
-    Source Clock Delay      (SCD):    0.672ns
+    Source Clock Delay      (SCD):    1.657ns
     Clock Pessimism Removal (CPR):    0.000ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -225,16 +225,16 @@ Slack (MET) :             7.346ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock clk rise edge)        0.000     0.000 r  
                                                       0.000     0.000 r  clk (IN)
-                         net (fo=33599, unset)        0.672     0.672    _0428_/g/Step2_inst/GEN_normal.GEN_out[0].GEN_Step2[3].and_reg_inst/clk
-                         FDRE                                         r  _0428_/g/Step2_inst/GEN_normal.GEN_out[0].GEN_Step2[3].and_reg_inst/Q_reg/C
+                         net (fo=33599, unset)        1.657     1.657    _1301_/g/Step2_inst/GEN_normal.GEN_out[0].GEN_Step2[2].and_reg_inst/clk
+    SLICE_X6Y6           FDRE                                         r  _1301_/g/Step2_inst/GEN_normal.GEN_out[0].GEN_Step2[2].and_reg_inst/Q_reg/C
   -------------------------------------------------------------------    -------------------
-                         FDRE (Prop_fdre_C_Q)         0.197     0.869 r  _0428_/g/Step2_inst/GEN_normal.GEN_out[0].GEN_Step2[3].and_reg_inst/Q_reg/Q
-                         net (fo=1, unplaced)         0.532     1.401    _0428_/g/Step2_inst/Step2_reg[3]
-                         LUT4 (Prop_lut4_I1_O)        0.153     1.554 r  _0428_/g/Step2_inst/out[0]_INST_0_i_1/O
-                         net (fo=1, unplaced)         0.340     1.894    _0428_/g/Step2_inst/out[0]_INST_0_i_1_n_0
-                         LUT5 (Prop_lut5_I4_O)        0.053     1.947 r  _0428_/g/Step2_inst/out[0]_INST_0/O
-                         net (fo=0)                   0.672     2.619    state_out1_s1[0]
-                                                                      r  state_out1_s1[0] (OUT)
+    SLICE_X6Y6           FDRE (Prop_fdre_C_Q)         0.308     1.965 r  _1301_/g/Step2_inst/GEN_normal.GEN_out[0].GEN_Step2[2].and_reg_inst/Q_reg/Q
+                         net (fo=1, routed)           0.726     2.691    _1301_/g/Step2_inst/Step2_reg[2]
+    SLICE_X8Y7           LUT4 (Prop_lut4_I0_O)        0.053     2.744 r  _1301_/g/Step2_inst/out[0]_INST_0_i_1/O
+                         net (fo=1, routed)           0.566     3.310    _1301_/g/Step2_inst/out[0]_INST_0_i_1_n_0
+    SLICE_X7Y6           LUT5 (Prop_lut5_I4_O)        0.053     3.363 r  _1301_/g/Step2_inst/out[0]_INST_0/O
+                         net (fo=0)                   0.672     4.035    state_out1_s1[872]
+                                                                      r  state_out1_s1[872] (OUT)
   -------------------------------------------------------------------    -------------------
 
                          (clock clk rise edge)       10.000    10.000 r  
@@ -243,9 +243,9 @@ Slack (MET) :             7.346ns  (required time - arrival time)
                          output delay                -0.000     9.965    
   -------------------------------------------------------------------
                          required time                          9.965    
-                         arrival time                          -2.619    
+                         arrival time                          -4.035    
   -------------------------------------------------------------------
-                         slack                                  7.346    
+                         slack                                  5.930    
 
 
 
@@ -253,44 +253,48 @@ Slack (MET) :             7.346ns  (required time - arrival time)
 
 Min Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.209ns  (arrival time - required time)
-  Source:                 _0000_/g/GEN_out[0].GEN_normal.reg_out0_ins1/Q_reg/C
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            _0000_/g/GEN_out[0].GEN_normal.reg_out0_ins2/Q_reg/D
+Slack (VIOLATED) :        -0.319ns  (arrival time - required time)
+  Source:                 state_in1_s1[1338]
+                            (input port clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            _0164_/g/GEN_in[2].reg_ins1/Q_reg/D
                             (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk
-  Path Type:              Hold (Min at Fast Process Corner)
+  Path Type:              Hold (Min at Slow Process Corner)
   Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
-  Data Path Delay:        0.181ns  (logic 0.079ns (43.645%)  route 0.102ns (56.355%))
+  Data Path Delay:        0.638ns  (logic 0.000ns (0.000%)  route 0.638ns (100.000%))
   Logic Levels:           0  
-  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    0.298ns
-    Source Clock Delay      (SCD):    0.283ns
+  Input Delay:            1.000ns
+  Clock Path Skew:        1.659ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.659ns
+    Source Clock Delay      (SCD):    0.000ns
     Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
                          (clock clk rise edge)        0.000     0.000 r  
-                                                      0.000     0.000 r  clk (IN)
-                         net (fo=33599, unset)        0.283     0.283    _0000_/g/GEN_out[0].GEN_normal.reg_out0_ins1/clk
-                         FDRE                                         r  _0000_/g/GEN_out[0].GEN_normal.reg_out0_ins1/Q_reg/C
-  -------------------------------------------------------------------    -------------------
-                         FDRE (Prop_fdre_C_Q)         0.079     0.362 r  _0000_/g/GEN_out[0].GEN_normal.reg_out0_ins1/Q_reg/Q
-                         net (fo=1, unplaced)         0.102     0.464    _0000_/g/GEN_out[0].GEN_normal.reg_out0_ins2/D
-                         FDRE                                         r  _0000_/g/GEN_out[0].GEN_normal.reg_out0_ins2/Q_reg/D
+                         input delay                  1.000     1.000    
+                                                      0.000     1.000 r  state_in1_s1[1338] (IN)
+                         net (fo=2, unset)            0.638     1.638    _0164_/g/GEN_in[2].reg_ins1/D
+    SLICE_X1Y1           FDRE                                         r  _0164_/g/GEN_in[2].reg_ins1/Q_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk rise edge)        0.000     0.000 r  
                                                       0.000     0.000 r  clk (IN)
-                         net (fo=33599, unset)        0.298     0.298    _0000_/g/GEN_out[0].GEN_normal.reg_out0_ins2/clk
-                         FDRE                                         r  _0000_/g/GEN_out[0].GEN_normal.reg_out0_ins2/Q_reg/C
-                         clock pessimism              0.000     0.298    
-                         FDRE (Hold_fdre_C_D)        -0.043     0.255    _0000_/g/GEN_out[0].GEN_normal.reg_out0_ins2/Q_reg
+                         net (fo=33599, unset)        1.659     1.659    _0164_/g/GEN_in[2].reg_ins1/clk
+    SLICE_X1Y1           FDRE                                         r  _0164_/g/GEN_in[2].reg_ins1/Q_reg/C
+                         clock pessimism              0.000     1.659    
+                         clock uncertainty            0.035     1.694    
+    SLICE_X1Y1           FDRE (Hold_fdre_C_D)         0.263     1.957    _0164_/g/GEN_in[2].reg_ins1/Q_reg
   -------------------------------------------------------------------
-                         required time                         -0.255    
-                         arrival time                           0.464    
+                         required time                         -1.957    
+                         arrival time                           1.638    
   -------------------------------------------------------------------
-                         slack                                  0.209    
+                         slack                                 -0.319    
 
 
 
@@ -303,10 +307,10 @@ Waveform(ns):       { 0.000 5.000 }
 Period(ns):         10.000
 Sources:            { clk }
 
-Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
-Min Period        n/a     FDRE/C   n/a            0.700         10.000      9.300                _0000_/g/GEN_in[0].reg_ins1/Q_reg/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.350         5.000       4.650                _0000_/g/GEN_in[0].reg_ins1/Q_reg/C
-High Pulse Width  Slow    FDRE/C   n/a            0.350         5.000       4.650                _0000_/g/GEN_in[0].reg_ins1/Q_reg/C
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
+Min Period        n/a     FDRE/C   n/a            0.750         10.000      9.250      SLICE_X22Y41  _0000_/g/GEN_in[0].reg_ins1/Q_reg/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.400         5.000       4.600      SLICE_X22Y41  _0000_/g/GEN_in[0].reg_ins1/Q_reg/C
+High Pulse Width  Slow    FDRE/C   n/a            0.350         5.000       4.650      SLICE_X22Y41  _0000_/g/GEN_in[0].reg_ins1/Q_reg/C
 
 
 

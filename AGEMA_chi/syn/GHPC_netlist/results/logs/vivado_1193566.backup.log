@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Nov 16 13:33:29 2026
+# Process ID         : 1193566
+# Current directory  : /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/syn/GHPC_netlist
+# Command line       : vivado -mode batch -source run_syn_GHPC_v1.tcl
+# Log file           : /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/syn/GHPC_netlist/vivado.log
+# Journal file       : /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/syn/GHPC_netlist/vivado.jou
+# Running On         : synopsys-vernam
+# Platform           : rhel
+# Operating System   : Red Hat Enterprise Linux 8.10 (Ootpa)
+# Processor Detail   : Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz
+# CPU Frequency      : 2399.996 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 4
+# Host memory        : 33431 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 33431 MB
+# Available Virtual  : 28734 MB
+#-----------------------------------------------------------
+source run_syn_GHPC_v1.tcl
+# set HOME_DIR $env(HOME)
+# set REPO     $HOME_DIR/BarberBerkofLeWeberMQP
+# set GHPC     $REPO/Gadget_chi/GHPC
+# create_project -in_memory -part xc7k70tfbv676-1
+# read_verilog [list \
+#     $REPO/AGEMA_chi/rtl/LFSR31.v \
+#     $GHPC/rtl/Verilog/AGEMA/GHPC_reg.v \
+#     $GHPC/rtl/Verilog/AGEMA/GHPC_AND_reg.v \
+#     $GHPC/rtl/Verilog/AGEMA/GHPC_Step2.v \
+#     $GHPC/rtl/Verilog/AGEMA_FPGA/GHPC_Step1_LUT3.v \
+#     $GHPC/rtl/Verilog/AGEMA_FPGA/GHPC_Gadget_LUT3.v \
+#     $GHPC/rtl/Verilog/AGEMA_FPGA/LUT3_GHPC.v \
+#     $REPO/AGEMA_chi/rtl/GHPC/chi_xilinx_netlist_GHPC__d1.v \
+#     $REPO/AGEMA_chi/rtl/GHPC/chi_xilinx_netlist_GHPC_wrapper.v \
+# ]
+# synth_design -top chi_xilinx_netlist_GHPC_wrapper \
+#              -part xc7k480tfbg676-1 \
+#              -flatten_hierarchy none
+Command: synth_design -top chi_xilinx_netlist_GHPC_wrapper -part xc7k480tfbg676-1 -flatten_hierarchy none
+WARNING: [Device 21-436] No parts matched 'xc7k480tfbg676-1'
+0 Infos, 1 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-162] Invalid option value specified for '-part'.
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 16 13:33:35 2026...

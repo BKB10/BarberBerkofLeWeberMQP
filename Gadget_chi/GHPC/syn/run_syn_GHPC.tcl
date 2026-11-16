@@ -1,5 +1,5 @@
 # run_synth_GHPC.tcl
-# Baseline synthesis for chi_xilinx_netlist_GHPC__d1.v
+# Baseline synthesis + implementation for chi_xilinx_netlist_GHPC__d1.v
 # using Verilog LUT3_GHPC gadget files.
 
 set HOME_DIR $env(HOME)
@@ -36,11 +36,16 @@ set_output_delay -max 0.0 -clock clk [get_ports state_out1_s0*]
 set_output_delay -min 0.0 -clock clk [get_ports state_out1_s1*]
 set_output_delay -max 0.0 -clock clk [get_ports state_out1_s1*]
 
+opt_design
+place_design
+route_design
+
 file mkdir $GHPC/syn/results
+file mkdir $GHPC/syn/results/logs
 
 report_timing_summary -file $GHPC/syn/results/timing_GHPC.rpt
 report_utilization    -file $GHPC/syn/results/util_GHPC.rpt
-
+i
 foreach f [glob -nocomplain *.log *.jou *.pb *.str] {
-    file rename -force $f $GHPC/syn/results/$f
+    file rename -force $f $GHPC/syn/results/logs/$f
 }
