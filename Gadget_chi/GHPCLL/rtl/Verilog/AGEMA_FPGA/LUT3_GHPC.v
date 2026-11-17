@@ -7,7 +7,7 @@
 `timescale 1ns/1ps
 
 module LUT3_GHPC #(
-    parameter [7:0] INIT = 8'hb00,
+    parameter [7:0] INIT = 8'hb4,
     parameter integer pipeline = 1,
     parameter integer low_latency = 1		// This is a dummy param for netlist
 )(

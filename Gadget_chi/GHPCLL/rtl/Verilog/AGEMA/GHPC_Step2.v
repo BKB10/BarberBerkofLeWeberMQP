@@ -27,8 +27,8 @@ module GHPC_Step2 #(
             for (X = 0; X < out_size; X = X + 1) begin : GEN_out
                 for (I = 0; I < 2**in_size; I = I + 1) begin : GEN_Step2
                     GHPC_AND_reg and_reg_inst (
-                        .A   (in_comb[I]),
-                        .B   (Step1_reg[X*(2**in_size) + I]),
+                        .input1   (in_comb[I]),
+                        .input2   (Step1_reg[X*(2**in_size) + I]),
                         .clk (clk),
                         .Q   (Step2_reg[X*(2**in_size) + I])
                     );
