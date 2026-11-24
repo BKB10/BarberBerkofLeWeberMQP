@@ -1,6 +1,9 @@
 import torch
-#from pathlib import Path
+from pathlib import Path
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+
+#context directory
+context_dir =  "lut_pack_context"
 
 #model id from huggingface
 model_id = "LLM-EDA/VeriPrefer-Qwen2.5-Coder-7B"
@@ -21,9 +24,13 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 
 
-#Read prompt
-with open('/home/dwbarber/MQP/BarberBerkofLeWeberMQP/model_scripts/context/chi_prompt.txt',"r", encoding="utf-8") as prompt_f:
-    prompt = prompt_f.read()
+# Read all context files in a stable order.
+context_dir = Path(__file__).resolve().parent / context_dir
+context_files = sorted(path for path in context_dir.rglob("*") if path.is_file())
+prompt = "\n\n".join(
+    f"--- {path.relative_to(context_dir)} ---\n{path.read_text(encoding='utf-8')}"
+    for path in context_files
+)
 
 messages = [
     {"role": "system", "content": "You are a helpful Verilog hardware design assistant."},
@@ -41,7 +48,7 @@ model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
 #Generate the result
 generated_ids = model.generate(
     **model_inputs,
-    max_new_tokens=512
+    max_new_tokens=1024
 )
 
 # Trim the input prompt tokens from the output
@@ -50,5 +57,6 @@ generated_ids = [
 ]
 
 response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
-print(response)
+print("Generated response, stored in model_output.txt:", response)
+Path("./model_output.txt").write_text(response, encoding="utf-8")
 
