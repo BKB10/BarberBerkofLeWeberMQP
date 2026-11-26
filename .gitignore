@@ -1,0 +1,30 @@
+#**** VIM ****
+*.swp
+
+#**** PYTHON ****
+# Bytecode & Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Build & distribution
+build/
+dist/
+*.egg-info/
+
+# Testing & coverage
+.tox/
+.coverage
+.pytest_cache/
+
+# IDEs & OS
+.vscode/
+.idea/
+.DS_Store

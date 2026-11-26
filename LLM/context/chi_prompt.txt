@@ -1,0 +1,30 @@
+Write a synthesizable Verilog-2001 module named `chi` that implements the
+Keccak-f[1600] chi step (χ) as purely combinational logic.
+
+Interface:
+- input  [1599:0] state_in
+- output [1599:0] state_out
+
+State layout:
+The 1600-bit state is a 5x5 array of 64-bit lanes. Lane (x, y), with x and y
+in 0..4, occupies bits [64*(x + 5*y) +: 64]. Bit z of lane (x, y) is
+state_in[64*(x + 5*y) + z], with z in 0..63.
+
+Function:
+For every x in 0..4, y in 0..4, z in 0..63:
+
+  state_out[x][y][z] = state_in[x][y][z] ^ ( ~state_in[(x+1) mod 5][y][z]
+                                           &  state_in[(x+2) mod 5][y][z] )
+
+Each row (fixed y) is processed independently, and the operation is bitwise
+across z. The x indices wrap around modulo 5.
+
+Requirements:
+- Combinational only: no clock, no reset, no registers, no always @(posedge).
+- Use generate loops (genvar x, y) with continuous assign statements, or a
+  combinational always @(*) block. Do not hard-code all 1600 equations.
+- No $display, initial blocks, delays (#), or other non-synthesizable constructs.
+- Use exactly the module and port names above.
+
+Output only the complete Verilog module in a single ```verilog code block,
+with no explanation.
