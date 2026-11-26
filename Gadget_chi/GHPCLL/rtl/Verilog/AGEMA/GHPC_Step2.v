@@ -2,6 +2,8 @@
 // Direct structural conversion from GHPC_Step2.vhd.
 // Preserves low_latency parameter — no splitting.
 
+`timescale 1ns/1ps
+
 module GHPC_Step2 #(
     parameter in_size    = 3,
     parameter out_size   = 1,

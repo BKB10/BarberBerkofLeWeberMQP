@@ -3,12 +3,12 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Sat Nov 14 21:29:24 2026
-# Process ID         : 1119967
-# Current directory  : /home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/syn
+# Start of session at: Fri Nov 20 17:47:38 2026
+# Process ID         : 1503159
+# Current directory  : /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/syn/GHPCLL_netlist
 # Command line       : vivado -mode batch -source run_syn_GHPCLL.tcl
-# Log file           : /home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/syn/vivado.log
-# Journal file       : /home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/syn/vivado.jou
+# Log file           : /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/syn/GHPCLL_netlist/vivado.log
+# Journal file       : /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/syn/GHPCLL_netlist/vivado.jou
 # Running On         : synopsys-vernam
 # Platform           : rhel
 # Operating System   : Red Hat Enterprise Linux 8.10 (Ootpa)
@@ -19,6 +19,6 @@
 # Host memory        : 33431 MB
 # Swap memory        : 0 MB
 # Total Virtual      : 33431 MB
-# Available Virtual  : 28732 MB
+# Available Virtual  : 28708 MB
 #-----------------------------------------------------------
 source run_syn_GHPCLL.tcl

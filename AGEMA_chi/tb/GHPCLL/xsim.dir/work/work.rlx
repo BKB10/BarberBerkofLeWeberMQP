@@ -1,0 +1,13 @@
+0.7
+2020.2
+Nov 14 2025
+12:36:23
+/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/rtl/GHPCLL/chi_xilinx_netlist_GHPCLL__d1.v,1794768203,systemVerilog,,/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/rtl/chi.v,,chi_GHPCLL__d1,,,,,,,,
+/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/rtl/chi.v,1791224793,systemVerilog,,/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPCLL/tb_chi_GHPCLL.v,,chi,,,,,,,,
+/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPCLL/tb_chi_GHPCLL.v,1795668541,systemVerilog,,,,tb_chi_GHPCLL,,,,,,,,
+/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/Verilog/AGEMA/GHPC_AND_reg.v,1794768203,systemVerilog,,/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/Verilog/AGEMA/GHPC_Step2.v,,GHPC_AND_reg,,,,,,,,
+/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/Verilog/AGEMA/GHPC_Step2.v,1794768203,systemVerilog,,/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/Verilog/AGEMA_FPGA/GHPC_Step1_LUT3.v,,GHPC_Step2,,,,,,,,
+/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/Verilog/AGEMA/GHPC_reg.v,1795669307,systemVerilog,,/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/Verilog/AGEMA/GHPC_AND_reg.v,,GHPC_reg,,,,,,,,
+/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/Verilog/AGEMA_FPGA/GHPC_Gadget_LUT3.v,1795668577,systemVerilog,,/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/Verilog/AGEMA_FPGA/LUT3_GHPC.v,,GHPC_Gadget_LUT3,,,,,,,,
+/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/Verilog/AGEMA_FPGA/GHPC_Step1_LUT3.v,1794768203,systemVerilog,,/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/Verilog/AGEMA_FPGA/GHPC_Gadget_LUT3.v,,GHPC_Step1_LUT3,,,,,,,,
+/home/hvle/BarberBerkofLeWeberMQP/Gadget_chi/GHPCLL/rtl/Verilog/AGEMA_FPGA/LUT3_GHPC.v,1794768203,systemVerilog,,/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/rtl/GHPCLL/chi_xilinx_netlist_GHPCLL__d1.v,,LUT3_GHPC,,,,,,,,

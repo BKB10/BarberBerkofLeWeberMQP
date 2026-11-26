@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_chi_GHPCLL_snap/xsimk -simmode gui -wdb tb_chi_GHPCLL_snap.wdb -simrunnum 0 -socket 58587
+Design successfully loaded
+Design Loading Memory Usage: 475552 KB (Peak: 475552 KB)
+Design Loading CPU Usage: 2090 ms
+Simulation completed
+Simulation Memory Usage: 546968 KB (Peak: 614820 KB)
+Simulation CPU Usage: 6220 ms

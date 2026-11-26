@@ -4,6 +4,8 @@
 // Port bundles are {share1, share0}.
 // Direct structural conversion from LUT3_GHPC.vhd (GHPC variant).
 
+`timescale 1ns/1ps
+
 module LUT3_GHPC #(
     parameter [7:0] INIT = 8'hb4,
     parameter integer pipeline = 1,

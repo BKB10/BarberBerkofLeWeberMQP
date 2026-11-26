@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Nov 26 00:03:04 2026
+# Process ID         : 1632489
+# Current directory  : /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPCLL
+# Command line       : xsim -log /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPCLL/results/sim/sim_chi_GHPCLL.log -mode tcl -source {xsim.dir/tb_chi_GHPCLL_snap/xsim_script.tcl}
+# Log file           : /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPCLL/results/sim/sim_chi_GHPCLL.log
+# Journal file       : /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPCLL/xsim.jou
+# Running On         : synopsys-vernam
+# Platform           : rhel
+# Operating System   : Red Hat Enterprise Linux 8.10 (Ootpa)
+# Processor Detail   : Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz
+# CPU Frequency      : 2399.996 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 4
+# Host memory        : 33431 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 33431 MB
+# Available Virtual  : 28250 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_chi_GHPCLL_snap/xsim_script.tcl
+source /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPCLL/results/xsim_cmd.tcl

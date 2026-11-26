@@ -1,4 +1,7 @@
 // GHPC_AND_reg.v
+
+`timescale 1ns/1ps
+
 module GHPC_AND_reg (
     input  wire input1,
     input  wire input2,

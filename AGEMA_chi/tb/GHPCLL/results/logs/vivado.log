@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Nov 26 00:02:36 2026
+# Process ID         : 1632109
+# Current directory  : /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPCLL
+# Command line       : vivado -mode batch -source run_tb_chi_GHPCLL.tcl
+# Log file           : /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPCLL/vivado.log
+# Journal file       : /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPCLL/vivado.jou
+# Running On         : synopsys-vernam
+# Platform           : rhel
+# Operating System   : Red Hat Enterprise Linux 8.10 (Ootpa)
+# Processor Detail   : Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz
+# CPU Frequency      : 2399.996 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 4
+# Host memory        : 33431 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 33431 MB
+# Available Virtual  : 28686 MB
+#-----------------------------------------------------------
+source run_tb_chi_GHPCLL.tcl
+# set HOME_DIR $env(HOME)
+# set REPO     $HOME_DIR/BarberBerkofLeWeberMQP
+# set GHPCLL   $REPO/Gadget_chi/GHPCLL
+# set RTL      $REPO/AGEMA_chi/rtl
+# file mkdir $REPO/AGEMA_chi/tb/GHPCLL/results
+# file mkdir $REPO/AGEMA_chi/tb/GHPCLL/results/logs
+# file mkdir $REPO/AGEMA_chi/tb/GHPCLL/results/sim
+# exec xvlog -sv \
+#     $GHPCLL/rtl/Verilog/AGEMA/GHPC_reg.v \
+#     $GHPCLL/rtl/Verilog/AGEMA/GHPC_AND_reg.v \
+#     $GHPCLL/rtl/Verilog/AGEMA/GHPC_Step2.v \
+#     $GHPCLL/rtl/Verilog/AGEMA_FPGA/GHPC_Step1_LUT3.v \
+#     $GHPCLL/rtl/Verilog/AGEMA_FPGA/GHPC_Gadget_LUT3.v \
+#     $GHPCLL/rtl/Verilog/AGEMA_FPGA/LUT3_GHPC.v \
+#     $RTL/GHPCLL/chi_xilinx_netlist_GHPCLL__d1.v \
+#     $RTL/chi.v \
+#     $REPO/AGEMA_chi/tb/GHPCLL/tb_chi_GHPCLL.v
+# exec xelab -top tb_chi_GHPCLL \
+#            -snapshot tb_chi_GHPCLL_snap \
+#            -L work
+# set xsim_tcl $REPO/AGEMA_chi/tb/GHPCLL/results/xsim_cmd.tcl
+# set f [open $xsim_tcl w]
+# puts $f "run all"
+# puts $f "quit"
+# close $f
+# set sim_out [exec xsim tb_chi_GHPCLL_snap \
+#                   -tclbatch $xsim_tcl \
+#                   -log $REPO/AGEMA_chi/tb/GHPCLL/results/sim/sim_chi_GHPCLL.log]
+# puts $sim_out
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Thu Nov 26 00:03:04 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_chi_GHPCLL_snap/xsim_script.tcl
+# xsim {tb_chi_GHPCLL_snap} -autoloadwcfg -tclbatch {/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPCLL/results/xsim_cmd.tcl}
+Time resolution is 1 ps
+source /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPCLL/results/xsim_cmd.tcl
+## run all
+PASS: 100 vectors matched.
+$finish called at time : 1006 ns : File "/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPCLL/tb_chi_GHPCLL.v" Line 94
+## quit
+INFO: xsimkernel Simulation Memory Usage: 546968 KB (Peak: 614820 KB), Simulation CPU Usage: 6220 ms
+INFO: [Common 17-206] Exiting xsim at Thu Nov 26 00:03:13 2026...
+# foreach f [glob -nocomplain *.log *.jou *.pb *.str] {
+#     file rename -force $f $REPO/AGEMA_chi/tb/GHPCLL/results/logs/$f
+# }
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 26 00:03:13 2026...

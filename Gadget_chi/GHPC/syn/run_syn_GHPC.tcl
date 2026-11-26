@@ -1,9 +1,9 @@
 # run_synth_LUT3_GHPC.tcl
-# Baseline synthesis + implementation for LUT3_GHPC (GHPC variant) in isolation.
+# Baseline synthesis + implementation for LUT3_GHPC gadget (GHPC variant).
 
 set HOME_DIR $env(HOME)
 set REPO     $HOME_DIR/BarberBerkofLeWeberMQP
-set GHPC     $REPO/Gagdget_chi/GHPC
+set GHPC     $REPO/Gadget_chi/GHPC
 
 create_project -in_memory -part xc7k70tfbv676-1
 
@@ -18,11 +18,9 @@ read_verilog [list \
 
 synth_design -top LUT3_GHPC \
              -part xc7k70tfbv676-1 \
-             -mode out_of_context \
              -flatten_hierarchy none \
              -generic {INIT=180 low_latency=0 pipeline=1}
 
-set_property HD.CLK_SRC BUFGCTRL_X0Y0 [get_ports clk]
 create_clock -name clk -period 10 [get_ports clk]
 set_input_delay -min 1.0 -clock clk [get_ports I0*]
 set_input_delay -max 1.0 -clock clk [get_ports I0*]
@@ -39,11 +37,11 @@ opt_design
 place_design
 route_design
 
-file mkdir $GHPC/syn/results
-file mkdir $GHPC/syn/results/logs
+#file mkdir $GHPC/syn/results
+#file mkdir $GHPC/syn/results/logs
 
-report_timing_summary -file $GHPC/syn/results/timing_LUT3_GHPC.rpt
-report_utilization    -file $GHPC/syn/results/util_LUT3_GHPC.rpt
+report_timing_summary -file $GHPC/syn/results/timing_GHPC.rpt
+report_utilization    -file $GHPC/syn/results/util_GHPC.rpt
 
 foreach f [glob -nocomplain *.log *.jou *.pb *.str] {
     file rename -force $f $GHPC/syn/results/logs/$f

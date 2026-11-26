@@ -1,0 +1,21 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /usr/local/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab -top tb_chi_GHPC -snapshot tb_chi_GHPC_snap -L work 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.chi
+Compiling module work.GHPC_reg
+Compiling module work.GHPC_Step1_LUT3(fresh_size=1,low...
+Compiling module work.GHPC_AND_reg
+Compiling module work.GHPC_Step2(low_latency=0,pipelin...
+Compiling module work.GHPC_Gadget_LUT3(low_latency=0)
+Compiling module work.LUT3_GHPC
+Compiling module work.chi_GHPC__d1
+Compiling module work.tb_chi_GHPC
+Built simulation snapshot tb_chi_GHPC_snap

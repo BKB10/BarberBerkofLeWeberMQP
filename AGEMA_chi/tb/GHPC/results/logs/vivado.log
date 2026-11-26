@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Nov 25 23:27:23 2026
+# Process ID         : 1618565
+# Current directory  : /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPC
+# Command line       : vivado -mode batch -source run_tb_chi_GHPC.tcl
+# Log file           : /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPC/vivado.log
+# Journal file       : /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPC/vivado.jou
+# Running On         : synopsys-vernam
+# Platform           : rhel
+# Operating System   : Red Hat Enterprise Linux 8.10 (Ootpa)
+# Processor Detail   : Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz
+# CPU Frequency      : 2399.996 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 4
+# Host memory        : 33431 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 33431 MB
+# Available Virtual  : 28686 MB
+#-----------------------------------------------------------
+source run_tb_chi_GHPC.tcl
+# set HOME_DIR $env(HOME)
+# set REPO     $HOME_DIR/BarberBerkofLeWeberMQP
+# set GHPC     $REPO/Gadget_chi/GHPC
+# set RTL      $REPO/AGEMA_chi/rtl
+# file mkdir $REPO/results/tb_chi_GHPC/sim
+# file mkdir $REPO/results/tb_chi_GHPC/logs
+# exec xvlog -sv \
+#     $GHPC/rtl/Verilog/AGEMA/GHPC_reg.v \
+#     $GHPC/rtl/Verilog/AGEMA/GHPC_AND_reg.v \
+#     $GHPC/rtl/Verilog/AGEMA/GHPC_Step2.v \
+#     $GHPC/rtl/Verilog/AGEMA_FPGA/GHPC_Step1_LUT3.v \
+#     $GHPC/rtl/Verilog/AGEMA_FPGA/GHPC_Gadget_LUT3.v \
+#     $GHPC/rtl/Verilog/AGEMA_FPGA/LUT3_GHPC.v \
+#     $RTL/GHPC/chi_xilinx_netlist_GHPC__d1.v \
+#     $RTL/chi.v \
+#     $REPO/AGEMA_chi/tb/GHPC/tb_chi_GHPC.v
+# exec xelab -top tb_chi_GHPC \
+#            -snapshot tb_chi_GHPC_snap \
+#            -L work
+# set xsim_tcl $REPO/AGEMA_chi/tb/GHPC/results/xsim_cmd.tcl
+# set f [open $xsim_tcl w]
+# puts $f "run all"
+# puts $f "quit"
+# close $f
+# set sim_out [exec xsim tb_chi_GHPC_snap \
+#                   -tclbatch $xsim_tcl \
+#                   -log $REPO/AGEMA_chi/tb/GHPC/results/sim/sim_chi_GHPC.log]
+# puts $sim_out
+CRITICAL WARNING: [Common 17-183] Failed to open handle /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPC/results/sim/sim_chi_GHPC.log. Please check access permission of directory '/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPC/results/sim'. You should restart the application from a writable working directory.
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Wed Nov 25 23:27:50 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_chi_GHPC_snap/xsim_script.tcl
+# xsim {tb_chi_GHPC_snap} -autoloadwcfg -tclbatch {/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPC/results/xsim_cmd.tcl}
+Time resolution is 1 ps
+source /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPC/results/xsim_cmd.tcl
+## run all
+PASS: 100 vectors matched.
+$finish called at time : 2016 ns : File "/home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPC/tb_chi_GHPC.v" Line 99
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:05 . Memory (MB): peak = 1805.039 ; gain = 0.000 ; free physical = 10515 ; free virtual = 26550
+## quit
+INFO: xsimkernel Simulation Memory Usage: 570180 KB (Peak: 640336 KB), Simulation CPU Usage: 7160 ms
+INFO: [Common 17-206] Exiting xsim at Wed Nov 25 23:28:00 2026...
+# foreach f [glob -nocomplain *.log *.jou *.pb *.str] {
+#     file rename -force $f $REPO/AGEMA_chi/tb/GHPC/results/logs/$f
+# }
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 25 23:28:00 2026...

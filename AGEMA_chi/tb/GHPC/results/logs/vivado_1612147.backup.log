@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Nov 25 23:11:23 2026
+# Process ID         : 1612147
+# Current directory  : /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPC
+# Command line       : vivado -mode batch -source run_tb_chi_GHPC.tcl
+# Log file           : /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPC/vivado.log
+# Journal file       : /home/hvle/BarberBerkofLeWeberMQP/AGEMA_chi/tb/GHPC/vivado.jou
+# Running On         : synopsys-vernam
+# Platform           : rhel
+# Operating System   : Red Hat Enterprise Linux 8.10 (Ootpa)
+# Processor Detail   : Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz
+# CPU Frequency      : 2399.996 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 4
+# Host memory        : 33431 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 33431 MB
+# Available Virtual  : 28687 MB
+#-----------------------------------------------------------
+source run_tb_chi_GHPC.tcl
+# set HOME_DIR $env(HOME)
+# set REPO     $HOME_DIR/BarberBerkofLeWeberMQP
+# set GHPC     $REPO/Gadget_chi/GHPC
+# set RTL      $REPO/AGEMA_chi/rtl
+# create_project -in_memory -part xc7k70tfbv676-1
+# read_verilog [list \
+#     $GHPC/rtl/Verilog/AGEMA/GHPC_reg.v \
+#     $GHPC/rtl/Verilog/AGEMA/GHPC_AND_reg.v \
+#     $GHPC/rtl/Verilog/AGEMA/GHPC_Step2.v \
+#     $GHPC/rtl/Verilog/AGEMA_FPGA/GHPC_Step1_LUT3.v \
+#     $GHPC/rtl/Verilog/AGEMA_FPGA/GHPC_Gadget_LUT3.v \
+#     $GHPC/rtl/Verilog/AGEMA_FPGA/LUT3_GHPC.v \
+#     $RTL/GHPC/chi_xilinx_netlist_GHPC__d1.v \
+#     $RTL/chi.v \
+#     $REPO/AGEMA_chi/tb/GHPC/tb_chi_GHPC.v \
+# ]
+# set_property -name {xsim.simulate.runtime} \
+#              -value {all} \
+#              -objects [get_filesets sim_1]
+# set_property -name {xsim.simulate.log_all_signals} \
+#              -value {true} \
+#              -objects [get_filesets sim_1]
+# set_property -name {xsim.simulate.tcl.post} \
+#              -value {} \
+#              -objects [get_filesets sim_1]
+# launch_simulation -simset sim_1 -mode behavioral
+ERROR: [Common 17-53] User Exception: The current project is in-memory. Please use Save Project As to save your work and re-do this operation.
+
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 25 23:11:29 2026...
